@@ -1,0 +1,53 @@
+@import "./animations.css";
+
+.board{
+    display:flex;
+    width : 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin : 0;
+}
+
+/* *{
+    border : 1px solid red;
+} */
+
+.cell{
+    display: flex;
+    width: 150px ;
+    height: 150px;
+    font-size: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin : 0  ;
+    border : 0;
+}
+
+.box0 ,.box1 , .box2{
+    border-bottom: 10px solid black;
+}
+
+.box6, .box7, .box8{
+    border-top : 10px solid black;
+}
+
+.box0, .box3, .box6{
+    border-right : 10px solid black;
+}
+
+.box2, .box5, .box8{
+    border-left: 10px solid black;
+}
+
+
+.scale-in-center {
+	animation: fadeAndScale 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.reset{
+    margin : 50px;
+}
